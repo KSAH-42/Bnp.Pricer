@@ -35,6 +35,33 @@ namespace Bnp.Pricer.Configuration
 		}
 
 		/// <summary>
+		/// Convert to byte
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
+		public static bool ToByte( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return 0;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return 0;
+			}
+
+			if ( byte.TryParse( data , out byte result ) )
+			{
+				return result;
+			}
+
+			return 0;
+		}
+
+		/// <summary>
 		/// Convert to short
 		/// </summary>
 		/// <param name="value"></param>
