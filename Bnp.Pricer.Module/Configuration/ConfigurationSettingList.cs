@@ -377,6 +377,108 @@ namespace Bnp.Pricer.Configuration
 		}
 
 		/// <summary>
+		/// Remove a setting
+		/// </summary>
+		/// <param name="settings">the settings</param>
+		/// <returns>returns the number of elements removed</returns>
+		public int RemoveAll( IEnumerable<ConfigurationSetting> settings )
+		{
+			if ( null == settings )
+			{
+				return 0;
+			}
+
+			int success = 0;
+
+			foreach ( var setting in settings )
+			{
+				if ( null == setting )
+				{
+					continue;
+				}
+
+				if ( ! _collection.Values.Contains( setting ) )
+				{
+					continue;
+				}
+
+				if ( ! _collection.Remove( setting.Name ) )
+				{
+					continue;
+				}
+
+				++ success;
+			}
+			
+			return success;
+		}
+
+		/// <summary>
+		/// Remove a setting
+		/// </summary>
+		/// <param name="settings">the settings name</param>
+		/// <returns>returns the number of elements removed</returns>
+		public int RemoveAll( IEnumerable<string> settings )
+		{
+			if ( null == settings )
+			{
+				return 0;
+			}
+
+			int success = 0;
+
+			foreach ( var setting in settings )
+			{
+				if ( string.IsNullOrWhiteSpace( setting ) )
+				{
+					continue;
+				}
+
+				if ( ! _collection.Remove( setting ) )
+				{
+					continue;
+				}
+
+				++ success;
+			}
+			
+			return success;
+		}
+
+		/// <summary>
+		/// Remove a setting
+		/// </summary>
+		/// <param name="predicate">the predicate</param>
+		/// <returns>returns the number of elements removed</returns>
+		/// <exception cref="ArgumentNullException"/>
+		public int RemoveAll( Func<ConfigurationSetting,bool> predicate )
+		{
+			if ( null == predicate )
+			{
+				throw new ArgumentNullException( nameof( predicate ) );
+			}
+
+			int success = 0;
+
+			foreach ( var setting in _collection.Values.Where( predicate ).ToList() )
+			{
+				if ( null == setting )
+				{
+					continue;
+				}
+
+				if ( ! _collection.Remove( setting.Name ) )
+				{
+					continue;
+				}
+
+				++ success;
+			}
+			
+			return success;
+		}
+
+		/// <summary>
 		/// Remove all elements
 		/// </summary>
 		public void Clear()
