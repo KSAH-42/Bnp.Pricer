@@ -150,20 +150,20 @@ namespace Bnp.Pricer.Configuration
 		/// Read a value
 		/// </summary>
 		/// <returns>returns an value</returns>
-		public byte ReadByte()
-		{
-			return ConfigurationConverter.ToByte( _value );
-		}
-		
-		/// <summary>
-		/// Read a value
-		/// </summary>
-		/// <returns>returns an value</returns>
 		public sbyte ReadSByte()
 		{
 			return ConfigurationConverter.ToSByte( _value );
 		}
 
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
+		public byte ReadByte()
+		{
+			return ConfigurationConverter.ToByte( _value );
+		}
+		
 		/// <summary>
 		/// Read a value
 		/// </summary>
@@ -315,6 +315,16 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( sbyte value )
+		{
+			return Write( value.ToString() );
+		}
+
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( byte value )
 		{
 			return Write( value.ToString() );
@@ -325,7 +335,17 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
-		public bool Write( sbyte value )
+		public bool Write( short value )
+		{
+			return Write( value.ToString() );
+		}
+
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( ushort value )
 		{
 			return Write( value.ToString() );
 		}
