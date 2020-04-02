@@ -143,6 +143,33 @@ namespace Bnp.Pricer.Configuration
 		}
 
 		/// <summary>
+		/// Convert to short
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
+		public static ushort ToUShort( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return 0;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return 0;
+			}
+
+			if ( ushort.TryParse( data , out ushort result ) )
+			{
+				return result;
+			}
+
+			return 0;
+		}
+
+		/// <summary>
 		/// Convert to int
 		/// </summary>
 		/// <param name="value"></param>

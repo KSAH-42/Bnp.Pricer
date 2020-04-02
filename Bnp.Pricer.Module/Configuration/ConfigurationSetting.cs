@@ -325,6 +325,16 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( sbyte value )
+		{
+			return Write( value.ToString() );
+		}
+
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( int value )
 		{
 			return Write( value.ToString() );
@@ -335,7 +345,27 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( uint value )
+		{
+			return Write( value.ToString() );
+		}
+
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( long value )
+		{
+			return Write( value.ToString() );
+		}
+
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( ulong value )
 		{
 			return Write( value.ToString() );
 		}
