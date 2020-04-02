@@ -305,6 +305,16 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( char value )
+		{
+			return Write( value.ToString() );
+		}
+		
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( byte value )
 		{
 			return Write( value.ToString() );
