@@ -16,5 +16,10 @@ namespace Bnp.Pricer.Configuration
 		/// Represent a setting
 		/// </summary>
 		public static readonly ConfigurationSettingInfo	PrecisionSetting = new ConfigurationSettingInfo( "Precision" , "4" );
+		
+		/// <summary>
+		/// Represent a setting
+		/// </summary>
+		public static readonly ConfigurationSettingInfo	TestUrlSetting = new ConfigurationSettingInfo( "TestUrl" , "http://www.tradingtoday.com/black-scholes" );
 	}
 }
