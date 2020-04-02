@@ -39,6 +39,33 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value"></param>
 		/// <returns>returns a value</returns>
+		public static char ToChar( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return char.MinValue;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return char.MinValue;
+			}
+
+			if ( char.TryParse( data , out char result ) )
+			{
+				return result;
+			}
+
+			return char.MinValue;
+		}
+
+		/// <summary>
+		/// Convert to byte
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
 		public static byte ToByte( string value )
 		{
 			if ( string.IsNullOrWhiteSpace( value ) )
@@ -143,6 +170,33 @@ namespace Bnp.Pricer.Configuration
 		}
 
 		/// <summary>
+		/// Convert to int
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
+		public static uint ToUInt( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return 0;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return 0;
+			}
+
+			if ( uint.TryParse( data , out uint result ) )
+			{
+				return result;
+			}
+
+			return 0;
+		}
+
+		/// <summary>
 		/// Convert to long
 		/// </summary>
 		/// <param name="value"></param>
@@ -162,6 +216,33 @@ namespace Bnp.Pricer.Configuration
 			}
 
 			if ( long.TryParse( data , out long result ) )
+			{
+				return result;
+			}
+
+			return 0;
+		}
+
+		/// <summary>
+		/// Convert to long
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
+		public static ulong ToULong( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return 0;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return 0;
+			}
+
+			if ( ulong.TryParse( data , out ulong result ) )
 			{
 				return result;
 			}
