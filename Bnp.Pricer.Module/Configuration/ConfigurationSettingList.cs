@@ -320,6 +320,33 @@ namespace Bnp.Pricer.Configuration
 		}
 
 		/// <summary>
+		/// List all settings
+		/// </summary>
+		/// <returns>Returns a collection of settings</returns>
+		public IList<string> ListAllKeys()
+		{
+			return _collection.Keys.ToList();
+		}
+
+		/// <summary>
+		/// List all settings
+		/// </summary>
+		/// <param name="predicate">the predicate</param>
+		/// <returns>Returns a collection of settings</returns>
+		/// <exception cref="ArgumentNullException"/>
+		public IList<string> ListAllKeys( Func<ConfigurationSetting,bool> predicate )
+		{
+			if ( null == predicate )
+			{
+				throw new ArgumentNullException( nameof( predicate) );
+			}
+
+			return this._collection.Values.Where( predicate )
+										  .Select( element => element.Name )
+										  .ToList();
+		}
+
+		/// <summary>
 		/// Remove a setting
 		/// </summary>
 		/// <param name="name">the name</param>
