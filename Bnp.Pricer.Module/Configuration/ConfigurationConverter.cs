@@ -60,6 +60,33 @@ namespace Bnp.Pricer.Configuration
 
 			return 0;
 		}
+		
+		/// <summary>
+		/// Convert to char
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns>returns a value</returns>
+		public static bool ToChar( string value )
+		{
+			if ( string.IsNullOrWhiteSpace( value ) )
+			{
+				return char.MinValue;
+			}
+
+			string data = value.Trim();
+
+			if ( string.IsNullOrWhiteSpace( data ) )
+			{
+				return char.MinValue;
+			}
+
+			if ( char.TryParse( data , out char result ) )
+			{
+				return result;
+			}
+
+			return char.MinValue;
+		}
 
 		/// <summary>
 		/// Convert to short
