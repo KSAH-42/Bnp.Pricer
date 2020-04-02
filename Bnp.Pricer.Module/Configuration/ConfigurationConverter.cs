@@ -39,7 +39,7 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value"></param>
 		/// <returns>returns a value</returns>
-		public static bool ToByte( string value )
+		public static byte ToByte( string value )
 		{
 			if ( string.IsNullOrWhiteSpace( value ) )
 			{
