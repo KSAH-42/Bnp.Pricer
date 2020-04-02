@@ -136,6 +136,15 @@ namespace Bnp.Pricer.Configuration
 		{
 			return ConfigurationConverter.ToBool( _value );
 		}
+		
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
+		public char ReadChar()
+		{
+			return ConfigurationConverter.ToChar( _value );
+		}
 
 		/// <summary>
 		/// Read a value
@@ -145,6 +154,15 @@ namespace Bnp.Pricer.Configuration
 		{
 			return ConfigurationConverter.ToByte( _value );
 		}
+		
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
+		public sbyte ReadSByte()
+		{
+			return ConfigurationConverter.ToSByte( _value );
+		}
 
 		/// <summary>
 		/// Read a value
@@ -153,6 +171,15 @@ namespace Bnp.Pricer.Configuration
 		public short ReadShort()
 		{
 			return ConfigurationConverter.ToShort( _value );
+		}
+		
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
+		public ushort ReadUShort()
+		{
+			return ConfigurationConverter.ToUShort( _value );
 		}
 
 		/// <summary>
@@ -168,9 +195,27 @@ namespace Bnp.Pricer.Configuration
 		/// Read a value
 		/// </summary>
 		/// <returns>returns an value</returns>
+		public uint ReadUInt()
+		{
+			return ConfigurationConverter.ToUInt( _value );
+		}
+		
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
 		public long ReadLong()
 		{
 			return ConfigurationConverter.ToLong( _value );
+		}
+		
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
+		public ulong ReadULong()
+		{
+			return ConfigurationConverter.ToULong( _value );
 		}
 
 		/// <summary>
