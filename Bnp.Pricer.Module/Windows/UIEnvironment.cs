@@ -17,5 +17,14 @@ namespace Bnp.Pricer.Windows
 			get => ConfigurationManager.Settings[ ConfigurationConstants.PrecisionSetting.Name ].ReadInt();
 			set => ConfigurationManager.Settings[ ConfigurationConstants.PrecisionSetting.Name ].Write( value );
 		}
+
+		/// <summary>
+		/// Gets / Sets the test url
+		/// </summary>
+		public static string TestUrl
+		{
+			get => ConfigurationManager.Settings[ ConfigurationConstants.TestUrlSetting.Name ].Read();
+			set => ConfigurationManager.Settings[ ConfigurationConstants.TestUrlSetting.Name ].Write( value );
+		}
 	}
 }
