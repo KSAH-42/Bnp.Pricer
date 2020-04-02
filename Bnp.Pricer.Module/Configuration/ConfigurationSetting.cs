@@ -141,6 +141,15 @@ namespace Bnp.Pricer.Configuration
 		/// Read a value
 		/// </summary>
 		/// <returns>returns an value</returns>
+		public byte ReadByte()
+		{
+			return ConfigurationConverter.ToByte( _value );
+		}
+
+		/// <summary>
+		/// Read a value
+		/// </summary>
+		/// <returns>returns an value</returns>
 		public short ReadShort()
 		{
 			return ConfigurationConverter.ToShort( _value );
