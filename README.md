@@ -4,11 +4,14 @@ In this repository, you will find an implementation of a trading options Black S
 
 # Project strucure
 
-This project contains the following assemblies :
+This project contains the following projects :
 
-* Bnp.Pricer.exe 
-* Bnp.Pricer.Module.dll 
-* Bnp.Pricer.Module.Tests.dll
+| Project name                 | Description                 |
+| ---------------------------- |:---------------------------:|
+| Bnp.Pricer                   | The GUI application         |
+| Bnp.Pricer.Module            | Class library               |
+| Bnp.Pricer.Module.Tests      | Units tests (MSTest)        |
+
 
 The majority of the code are located in the following assembly :
 
