@@ -13,12 +13,12 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Represent the maximum of settings
 		/// </summary>
-		public const int											MaximumOfSettings			= 3000;
+		public const int						MaximumOfSettings	= 3000;
 
 		/// <summary>
 		/// The setting containers class
 		/// </summary>
-		private readonly IDictionary<string,ConfigurationSetting>	_collection					= new Dictionary<string,ConfigurationSetting>();
+		private readonly IDictionary<string,ConfigurationSetting>	_collection		= new Dictionary<string,ConfigurationSetting>();
 
 		
 
