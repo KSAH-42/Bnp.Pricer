@@ -30,7 +30,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// the readonly state
 		/// </summary>
-		private bool                _isReadOnly		 = false;
+		private bool                _isReadOnly      = false;
 
 		/// <summary>
 		/// the dirty flag
