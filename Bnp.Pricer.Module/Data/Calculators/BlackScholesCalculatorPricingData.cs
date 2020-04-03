@@ -10,27 +10,27 @@ namespace Bnp.Pricer.Data.Calculators
 		/// <summary>
 		/// Stock price backing field
 		/// </summary>
-		private readonly decimal _stockPrice           = 0;
+		private readonly decimal             _stockPrice           = 0;
 
 		/// <summary>
 		/// Strike price backing field
 		/// </summary>
-		private readonly decimal _strikePrice          = 0;
+		private readonly decimal             _strikePrice          = 0;
 
 		/// <summary>
 		/// Stddev price backing field
 		/// </summary>
-		private readonly decimal _standardDeviation    = 0;
+		private readonly decimal             _standardDeviation    = 0;
 
 		/// <summary>
 		/// Risk interest backing field
 		/// </summary>
-		private readonly decimal _riskInterest         = 0;
+		private readonly decimal             _riskInterest         = 0;
 
 		/// <summary>
 		/// Time backing field
 		/// </summary>
-		private readonly decimal _time                 = 0;
+		private readonly decimal             _time                 = 0;
 
 
 		/// <summary>
