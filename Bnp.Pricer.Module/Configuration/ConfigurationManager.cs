@@ -67,7 +67,7 @@ namespace Bnp.Pricer.Configuration
 				AutoClear = true
 			};
 
-			builder.AddProperty( ConfigurationConstants.PrecisionSetting.Name , ConfigurationConstants.PrecisionSetting.Value );
+			builder.AddSetting( ConfigurationConstants.PrecisionSetting.Name , ConfigurationConstants.PrecisionSetting.Value );
 
 			builder.Build();
 		}

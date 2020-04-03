@@ -54,173 +54,173 @@ namespace Bnp.Pricer.Configuration
 
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , bool defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , bool defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , char defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , char defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
+		/// <param name="name"></param>
 		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , byte defaultValue )
+		public void AddSetting( string name , byte defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , sbyte defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , sbyte defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , short defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , short defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , ushort defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , ushort defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , int defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , int defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , uint defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , uint defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , long defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , long defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , ulong defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , ulong defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , float defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , float defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , decimal defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , decimal defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , double defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , double defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , DateTime defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , DateTime defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , TimeSpan defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , TimeSpan defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , Guid defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , Guid defaultValue )
 		{
-			AddProperty( propertyName , defaultValue.ToString() );
+			AddSetting( name , defaultValue.ToString() );
 		}
 
 		/// <summary>
-		/// Add a property
+		/// Add a setting
 		/// </summary>
-		/// <param name="propertyName"></param>
-		/// <param name="defaultValue"></param>
-		public void AddProperty( string propertyName , string defaultValue )
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
+		public void AddSetting( string name , string defaultValue )
 		{
-			_items.Add( new ConfigurationSetting( propertyName , defaultValue ) );
+			_items.Add( new ConfigurationSetting( name , defaultValue ) );
 		}
 				
 		/// <summary>
