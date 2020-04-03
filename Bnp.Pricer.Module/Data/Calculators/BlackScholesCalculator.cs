@@ -25,44 +25,44 @@ namespace Bnp.Pricer.Data.Calculators
 
 			var d1 = new D1Formula()
 			{
-				StockPrice		  = data.StockPrice,
-				StrikePrice		  = data.StrikePrice,
-				Time			  = data.Time ,
+				StockPrice        = data.StockPrice,
+				StrikePrice       = data.StrikePrice,
+				Time              = data.Time ,
 				StandardDeviation = data.StandardDeviation ,
-				RiskInterest	  = data.RiskInterest ,
+				RiskInterest      = data.RiskInterest ,
 			};
 			
 			d1.Calculate();
 
 			var d2 = new D2Formula()
 			{
-				D1				  = d1.Result,
+				D1                = d1.Result,
 				StandardDeviation = data.StandardDeviation ,
-				Time			  = data.Time ,
+				Time              = data.Time ,
 			};
 			
 			d2.Calculate();
 
 			var callOption = new CallOptionFormula()
 			{
-				D1				  = d1.Result ,
-				D2				  = d2.Result ,
-				StockPrice		  = data.StockPrice ,
-				StrikePrice		  = data.StrikePrice ,
-				Time			  = data.Time,
-				RiskInterest	  = data.RiskInterest ,
+				D1                = d1.Result ,
+				D2                = d2.Result ,
+				StockPrice        = data.StockPrice ,
+				StrikePrice       = data.StrikePrice ,
+				Time              = data.Time,
+				RiskInterest      = data.RiskInterest ,
 			};
 
 			callOption.Calculate();
 
 			var putOption = new PutOptionFormula()
 			{
-				D1				  = d1.Result ,
-				D2				  = d2.Result ,
-				StockPrice		  = data.StockPrice ,
-				StrikePrice		  = data.StrikePrice ,
-				Time			  = data.Time,
-				RiskInterest	  = data.RiskInterest,
+				D1                = d1.Result ,
+				D2                = d2.Result ,
+				StockPrice        = data.StockPrice ,
+				StrikePrice       = data.StrikePrice ,
+				Time              = data.Time,
+				RiskInterest      = data.RiskInterest,
 			};
 			
 			putOption.Calculate();
