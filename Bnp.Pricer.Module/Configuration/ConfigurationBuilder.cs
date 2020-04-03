@@ -11,17 +11,17 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// The settings list
 		/// </summary>
-		private readonly ConfigurationSettingList	_settings	= null;
+		private readonly ConfigurationSettingList       _settings      = null;
 
 		/// <summary>
 		/// The collection used to build
 		/// </summary>
-		private readonly IList<ConfigurationSetting>	_items		= null;
+		private readonly IList<ConfigurationSetting>    _items         = null;
 
 		/// <summary>
 		/// Variable used to perform to remove all elements before the build operation
 		/// </summary>
-		private bool					_autoClear	= false;
+		private bool                                    _autoClear     = false;
 
 
 
@@ -68,7 +68,47 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="propertyName"></param>
 		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , char defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , byte defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , sbyte defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
 		public void AddProperty( string propertyName , short defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , ushort defaultValue )
 		{
 			AddProperty( propertyName , defaultValue.ToString() );
 		}
@@ -88,7 +128,27 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="propertyName"></param>
 		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , uint defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
 		public void AddProperty( string propertyName , long defaultValue )
+		{
+			AddProperty( propertyName , defaultValue.ToString() );
+		}
+
+		/// <summary>
+		/// Add a property
+		/// </summary>
+		/// <param name="propertyName"></param>
+		/// <param name="defaultValue"></param>
+		public void AddProperty( string propertyName , ulong defaultValue )
 		{
 			AddProperty( propertyName , defaultValue.ToString() );
 		}
