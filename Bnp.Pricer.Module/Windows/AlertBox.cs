@@ -12,6 +12,53 @@ namespace Bnp.Pricer.Windows
 		/// Show a message
 		/// </summary>
 		/// <param name="message">the message</param>
+		public static void ShowDebug( string message )
+		{
+			ShowDebug( message , "Debug" );
+		}
+
+		/// <summary>
+		/// Show a message
+		/// </summary>
+		/// <param name="message">the message</param>
+		/// <param name="caption">the caption</param>
+		public static void ShowDebug( string message , string caption )
+		{
+#if DEBUG
+			Show( message , caption , MessageBoxButton.OK , MessageBoxImage.Asterisk );
+#endif
+		}
+
+		/// <summary>
+		/// Show a message
+		/// </summary>
+		/// <param name="exception">the exception</param>
+		public static void ShowDebug( Exception exception )
+		{
+			ShowDebug( exception , "Debug" );
+		}
+
+		/// <summary>
+		/// Show a message
+		/// </summary>
+		/// <param name="exception">the exception</param>
+		/// <param name="caption">the caption</param>
+		public static void ShowDebug( Exception exception , string caption )
+		{
+#if DEBUG
+			if ( null == exception )
+			{
+				return;
+			}
+
+			Show( exception.Message , caption , MessageBoxButton.OK , MessageBoxImage.Asterisk );
+#endif
+		}
+
+		/// <summary>
+		/// Show a message
+		/// </summary>
+		/// <param name="message">the message</param>
 		public static void ShowInfo( string message )
 		{
 			ShowInfo( message , "Informations" );
@@ -87,53 +134,6 @@ namespace Bnp.Pricer.Windows
 			}
 
 			Show( exception.Message , caption , MessageBoxButton.OK , MessageBoxImage.Error );
-		}
-
-		/// <summary>
-		/// Show a message
-		/// </summary>
-		/// <param name="message">the message</param>
-		public static void ShowDebug( string message )
-		{
-			ShowDebug( message , "Debug" );
-		}
-
-		/// <summary>
-		/// Show a message
-		/// </summary>
-		/// <param name="message">the message</param>
-		/// <param name="caption">the caption</param>
-		public static void ShowDebug( string message , string caption )
-		{
-#if DEBUG
-			Show( message , caption , MessageBoxButton.OK , MessageBoxImage.Asterisk );
-#endif
-		}
-
-		/// <summary>
-		/// Show a message
-		/// </summary>
-		/// <param name="exception">the exception</param>
-		public static void ShowDebug( Exception exception )
-		{
-			ShowDebug( exception , "Debug" );
-		}
-
-		/// <summary>
-		/// Show a message
-		/// </summary>
-		/// <param name="exception">the exception</param>
-		/// <param name="caption">the caption</param>
-		public static void ShowDebug( Exception exception , string caption )
-		{
-#if DEBUG
-			if ( null == exception )
-			{
-				return;
-			}
-
-			Show( exception.Message , caption , MessageBoxButton.OK , MessageBoxImage.Asterisk );
-#endif
 		}
 
 		/// <summary>
