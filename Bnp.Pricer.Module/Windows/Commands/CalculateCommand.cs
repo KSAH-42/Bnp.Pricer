@@ -14,12 +14,12 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorModel         _model        = null;
+		private readonly CalculatorModel           _model       = null;
 
 		/// <summary>
 		/// The calculator 
 		/// </summary>
-		private readonly BlackScholesCalculator  _calculator   = null;
+		private readonly BlackScholesCalculator   _calculator   = null;
 
 
 
