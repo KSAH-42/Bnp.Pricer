@@ -1,4 +1,4 @@
-# Black Scholes Calulator
+# Black Scholes Calculator
 
 In this repository, you will find an implementation of a trading options Black Scholes calculator using C# and WPF.
 
