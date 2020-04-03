@@ -34,3 +34,4 @@ For more details, look on the following namespace :
 * WPF
 * MVVM
 * MSTest
+* Design patterns
