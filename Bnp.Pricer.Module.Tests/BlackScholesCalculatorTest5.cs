@@ -9,8 +9,8 @@ namespace Bnp.Pricer.Tests
 	[TestClass]
 	public class BlackScholesCalculatorTest5
 	{
-		private BlackScholesCalculator			_calculator 	= null;
-		private BlackScholesCalculatorPricingResults	_result		= null;
+		private BlackScholesCalculator                _calculator   = null;
+		private BlackScholesCalculatorPricingResults  _result       = null;
 
 		[TestInitialize]
 		public void Initialize()
