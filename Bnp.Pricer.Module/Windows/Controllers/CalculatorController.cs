@@ -14,17 +14,17 @@ namespace Bnp.Pricer.Windows.Controllers
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorModel		_model				= null;
+		private readonly CalculatorModel	_model			= null;
 
 		/// <summary>
 		/// The calculate command
 		/// </summary>
-		private readonly ICommand				_calculateCommand	= null;
+		private readonly ICommand		_calculateCommand	= null;
 
 		/// <summary>
 		/// The reset command
 		/// </summary>
-		private readonly ICommand				_resetCommand		= null;
+		private readonly ICommand		_resetCommand		= null;
 
 
 
@@ -34,7 +34,7 @@ namespace Bnp.Pricer.Windows.Controllers
 		/// </summary>
 		public CalculatorController()
 		{
-			_model				= new CalculatorModel();
+			_model			= new CalculatorModel();
 			_calculateCommand	= new CalculateCommand( _model );
 			_resetCommand		= new     ResetCommand( _model );
 		}
