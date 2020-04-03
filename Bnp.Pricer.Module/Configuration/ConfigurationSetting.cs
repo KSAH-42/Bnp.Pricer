@@ -10,27 +10,32 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Design for null object pattern
 		/// </summary>
-		private readonly static ConfigurationSetting	s_null	= new ConfigurationSetting();
+		private readonly static ConfigurationSetting   s_null	= new ConfigurationSetting();
 
 		/// <summary>
 		/// The name backing field
 		/// </summary>
-		private readonly string		_name			= string.Empty;
+		private readonly string     _name            = string.Empty;
 
 		/// <summary>
 		/// The default value backing field
 		/// </summary>
-		private readonly string		_defaultValue   = string.Empty;
+		private readonly string     _defaultValue    = string.Empty;
 
 		/// <summary>
 		/// The value backing field
 		/// </summary>
-		private string          	_value			= string.Empty;
+		private string              _value           = string.Empty;
+
+		/// <summary>
+		/// the readonly state
+		/// </summary>
+		private bool                _isReadOnly		 = false;
 
 		/// <summary>
 		/// the dirty flag
 		/// </summary>
-		private bool				_isDirty		= false;
+		private bool                _isDirty         = false;
 
 
 		
@@ -63,9 +68,9 @@ namespace Bnp.Pricer.Configuration
 				throw new ArgumentException( nameof( name ) );
 			}
 
-			_name			= name;
-			_defaultValue	= defaultValue ?? string.Empty;
-			_value			= defaultValue ?? string.Empty;
+			_name         = name;
+			_defaultValue = defaultValue ?? string.Empty;
+			_value        = defaultValue ?? string.Empty;
 		}
 
 
@@ -103,6 +108,15 @@ namespace Bnp.Pricer.Configuration
 		{
 			get => Read();
 			set => Write( value );
+		}
+
+		/// <summary>
+		/// Gets / Sets the readonly status
+		/// </summary>
+		public bool IsReadOnly
+		{
+			get => _isReadOnly;
+			set => _isReadOnly = value;
 		}
 
 		/// <summary>
@@ -277,24 +291,6 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		/// <param name="value">the value</param>
 		/// <returns>Returns true for a success, otherwise false</returns>
-		public bool Write( string value )
-		{
-			if ( 0 == string.Compare( _value ?? string.Empty , value ?? string.Empty ) )
-			{
-				return false;
-			}
-
-			_value   = value;
-			_isDirty = true;
-
-			return true;
-		}
-		
-		/// <summary>
-		/// Write a new value
-		/// </summary>
-		/// <param name="value">the value</param>
-		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( bool value )
 		{
 			return Write( value.ToString() );
@@ -448,6 +444,29 @@ namespace Bnp.Pricer.Configuration
 		public bool Write( Guid value )
 		{
 			return Write( value.ToString() );
+		}
+		
+		/// <summary>
+		/// Write a new value
+		/// </summary>
+		/// <param name="value">the value</param>
+		/// <returns>Returns true for a success, otherwise false</returns>
+		public bool Write( string value )
+		{
+			if ( this._isReadOnly )
+			{
+				return false;
+			}
+
+			if ( 0 == string.Compare( _value ?? string.Empty , value ?? string.Empty ) )
+			{
+				return false;
+			}
+
+			_value   = value ?? string.Empty;
+			_isDirty = true;
+
+			return true;
 		}
 		
 		/// <summary>
