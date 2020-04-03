@@ -10,7 +10,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to bool
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static bool ToBool( string value )
 		{
@@ -37,7 +37,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to byte
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static char ToChar( string value )
 		{
@@ -64,7 +64,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to byte
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static byte ToByte( string value )
 		{
@@ -91,7 +91,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to byte
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static sbyte ToSByte( string value )
 		{
@@ -118,7 +118,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to short
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static short ToShort( string value )
 		{
@@ -145,7 +145,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to short
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static ushort ToUShort( string value )
 		{
@@ -172,7 +172,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to int
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static int ToInt( string value )
 		{
@@ -199,7 +199,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to int
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static uint ToUInt( string value )
 		{
@@ -226,7 +226,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to long
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static long ToLong( string value )
 		{
@@ -253,7 +253,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to long
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static ulong ToULong( string value )
 		{
@@ -280,7 +280,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to float
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static float ToFloat( string value )
 		{
@@ -307,7 +307,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to decimal
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static decimal ToDecimal( string value )
 		{
@@ -334,7 +334,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to double
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static double ToDouble( string value )
 		{
@@ -361,7 +361,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to date time
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static DateTime ToDateTime( string value )
 		{
@@ -388,7 +388,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to time span
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static TimeSpan ToTimeSpan( string value )
 		{
@@ -415,7 +415,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Convert to guid
 		/// </summary>
-		/// <param name="value"></param>
+		/// <param name="value">the value</param>
 		/// <returns>returns a value</returns>
 		public static Guid ToGuid( string value )
 		{

@@ -92,7 +92,7 @@ namespace Bnp.Pricer.Windows.Models
 		/// <summary>
 		/// Fired when a property has been changed
 		/// </summary>
-		/// <param name="e"></param>
+		/// <param name="e">the event args</param>
 		protected virtual void OnPropertyChanged( PropertyChangedEventArgs e )
 		{
 			if ( null == e )

@@ -453,7 +453,7 @@ namespace Bnp.Pricer.Configuration
 		/// <returns>Returns true for a success, otherwise false</returns>
 		public bool Write( string value )
 		{
-			if ( this._isReadOnly )
+			if ( _isReadOnly )
 			{
 				return false;
 			}

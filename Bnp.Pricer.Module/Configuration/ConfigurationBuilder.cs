@@ -76,8 +76,8 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Add a setting
 		/// </summary>
-		/// <param name="name"></param>
-		/// <param name="defaultValue"></param>
+		/// <param name="name">the name of the setting</param>
+		/// <param name="defaultValue">the default value</param>
 		public void AddSetting( string name , byte defaultValue )
 		{
 			AddSetting( name , defaultValue.ToString() );
