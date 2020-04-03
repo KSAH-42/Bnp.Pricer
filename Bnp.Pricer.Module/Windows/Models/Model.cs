@@ -23,7 +23,7 @@ namespace Bnp.Pricer.Windows.Models
 		/// Validate the current model
 		/// </summary>
 		/// <returns>Returns true for a success</returns>
-		public abstract bool Validate();
+		public abstract bool IsValid();
 
 		/// <summary>
 		/// Gets the a property value

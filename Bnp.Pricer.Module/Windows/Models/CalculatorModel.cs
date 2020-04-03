@@ -168,7 +168,7 @@ namespace Bnp.Pricer.Windows.Models
 		/// Validate the current model
 		/// </summary>
 		/// <returns>Returns true for a success</returns>
-		public override bool Validate()
+		public override bool IsValid()
 		{
 			if ( 0 >= Precision )
 			{

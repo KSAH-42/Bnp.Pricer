@@ -50,7 +50,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <returns>returns true for a success, otherwise false.</returns>
 		public override bool CanExecute( object parameter )
 		{
-			return _model.Validate();
+			return _model.IsValid();
 		}
 
 		/// <summary>
