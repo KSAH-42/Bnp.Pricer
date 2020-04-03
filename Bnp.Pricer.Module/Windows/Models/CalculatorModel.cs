@@ -10,12 +10,12 @@ namespace Bnp.Pricer.Windows.Models
 		/// <summary>
 		/// The pricision
 		/// </summary>
-		private int				_precision			= 4;
+		private int			_precision		= 4;
 
 		/// <summary>
 		/// The stock price backing field
 		/// </summary>
-		private decimal			_stockPrice			= 0;
+		private decimal			_stockPrice		= 0;
 
 		/// <summary>
 		/// The strike price backing field
@@ -25,7 +25,7 @@ namespace Bnp.Pricer.Windows.Models
 		/// <summary>
 		/// The time backing field
 		/// </summary>
-		private decimal			_time				= 0;
+		private decimal			_time			= 0;
 
 		/// <summary>
 		/// The standard deviation backing field
@@ -40,22 +40,22 @@ namespace Bnp.Pricer.Windows.Models
 		/// <summary>
 		/// D1 backing field
 		/// </summary>
-		private decimal			_d1					= 0;
+		private decimal			_d1			= 0;
 
 		/// <summary>
 		/// D2 backing field
 		/// </summary>
-		private decimal			_d2					= 0;
+		private decimal			_d2			= 0;
 
 		/// <summary>
 		/// Call option backing field
 		/// </summary>
-		private decimal			_callOption			= 0;
+		private decimal			_callOption		= 0;
 
 		/// <summary>
 		/// Put option backing field
 		/// </summary>
-		private decimal			_putOption			= 0;
+		private decimal			_putOption		= 0;
 
 		
 		
@@ -208,9 +208,9 @@ namespace Bnp.Pricer.Windows.Models
 		/// </summary>
 		public void ClearParameters()
 		{
-			StockPrice			= 0;
-			StrikePrice			= 0;
-			Time				= 0;
+			StockPrice		= 0;
+			StrikePrice		= 0;
+			Time			= 0;
 			StandardDeviation	= 0;
 			RiskInterest		= 0;
 		}
@@ -220,10 +220,10 @@ namespace Bnp.Pricer.Windows.Models
 		/// </summary>
 		public void ClearResults()
 		{
-			D1					= 0;
-			D2					= 0;
-			CallOption			= 0;
-			PutOption			= 0;
+			D1		= 0;
+			D2		= 0;
+			CallOption	= 0;
+			PutOption	= 0;
 		}
 	}
 }
