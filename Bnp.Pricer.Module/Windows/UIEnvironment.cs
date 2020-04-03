@@ -5,7 +5,7 @@ namespace Bnp.Pricer.Windows
 	using Bnp.Pricer.Configuration;
 
 	/// <summary>
-	/// Represent the bridge between ui objects that need consume parameter and configuration settings. This is class is for reducing coupling between ui objects and for example the configuration classes
+	/// Represent the bridge between ui objects that needs to consume parameter and configuration settings. This is class is for reducing coupling between ui objects and for example the configuration classes
 	/// </summary>
 	public static class UIEnvironment
 	{
