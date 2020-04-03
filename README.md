@@ -27,7 +27,9 @@ For more details, look on the following namespace :
 * Bnp.Pricer.Data.Calculators.Formulas
 
 
-# Environment
+# Additional infos
+
+In this section, you will the tools and technologies used during the development of this application :
 
 * Visual Studio Express edition (2017)
 * C#
