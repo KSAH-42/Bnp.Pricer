@@ -1,4 +1,4 @@
-# Bnp.Pricer
+# Black Scholes Calulator
 
 This application represent how to implement a trading options Black Scholes calculator using C# and WPF. 
 
