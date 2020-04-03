@@ -32,7 +32,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// The file name backing field
 		/// </summary>
-		private string								_fileName	= string.Empty;
+		private string					_fileName	= string.Empty;
 
 		/// <summary>
 		/// The settings list backing field
