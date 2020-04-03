@@ -17,7 +17,7 @@ The majority of the code are located in the following assembly :
 # About the calculator
 
 The most relevant code are located in the Bnp.Pricer.Module.dll. 
-For more details, look on the following namespace
+For more details, look on the following namespace :
 
 * Bnp.Pricer.Data
 * Bnp.Pricer.Data.Calculators
