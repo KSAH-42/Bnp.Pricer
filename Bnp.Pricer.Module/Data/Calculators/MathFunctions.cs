@@ -3,25 +3,20 @@
 namespace Bnp.Pricer.Data.Calculators
 {
 	/// <summary>
-	/// Represent the helpers methods. The idea of thus class is to stay in the way of writing / translating formla more "standard".
+	/// Represent the helpers methods. This class is used to simply the way of writing formula. Sometimes it'is possible to convert a data type and pass it to a Math.XXXXX function because the Math class doesn't support all data type.
 	/// </summary>
 	/// <remarks>
-	///		<para>If you just look on all formula statement implementation, the calculation statements used math static methods.</para>
-	///		<para>I have decided to preserved this philosophy to used core math function defined as static lile the <see cref="Math"/> class.</para>
-	///		<para>This function is not used has a <see cref="IFormula"/>. It can be wrapped into a formula object.</para>
-	///		<para>The actual version of C# does not allow to provided extensions method to STATIC class.</para>
-	///		<para>Perphaps the better approach, is to create a static class which that static Maths statis methods. </para>
-	///		<para>But, I have prefered to exposed has a static method, because on all <see cref="IFormula.Calculate"/> method, this method used <see cref="Math"/> static methods/</para>
-	///		<para>So, in terms of readability, I thinks it'is better to used on the formula implemtation static methods in formula statements.</para>
-	///		<para/>
-	///		<example>
-	///		<para>This class is used to avoid code like that:</para>
+	///		<example> This class is used to avoid code like that:
 	///		<code>
-	///			double result = Math.Log( x ) * Algos.CalcDistrib( x ) + Heplers.CalcSomething(x) ;
+	///                     decimal value  = 2M;
+	///                     double result1 = Math.Log( Convert.ToDouble( 2M ) );
+	///			double result2 = Math.Log( x ) * Algos.CalcDistrib( x ) + Heplers.CalcSomething(x) ;
 	///		</code>
-	///		<para>The prefered approach is:</para>
+	///		<para>The prefered approach is: </para>
 	///		<code>
-	///			double result = PricerMath.Log( x ) * PricerMath.CalcDistrib( x ) + PricerMath.CalcSomething(x) ;
+	///                     decimal value  = 2M;
+	///                     double result1 = PricerMath.Log( 2M );
+	///			double result  = PricerMath.Log( x ) * PricerMath.CalcDistrib( x ) + PricerMath.CalcSomething(x) ;
 	///		</code>
 	///		</example>
 	/// </remarks>
