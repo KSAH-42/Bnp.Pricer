@@ -98,7 +98,7 @@ namespace Bnp.Pricer.Configuration
 		/// </summary>
 		public string DefaultValue
 		{
-			get => _value;
+			get => _defaultValue;
 		}
 
 		/// <summary>
