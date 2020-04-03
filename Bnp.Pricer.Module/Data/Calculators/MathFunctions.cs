@@ -3,7 +3,7 @@
 namespace Bnp.Pricer.Data.Calculators
 {
 	/// <summary>
-	/// Represent the helpers methods. This class is used to simply the way of writing formula. Sometimes it'is possible to convert a data type and pass it to a Math.XXXXX function because the Math class doesn't support all data type.
+	/// Represent the helpers methods. This class is used to simplify the way of writing formula and keep the code more standard. Sometimes it'is possible to convert a data type and pass it to a Math.XXXXX function because the Math class doesn't support all data type.
 	/// </summary>
 	/// <remarks>
 	///		<example> This class is used to avoid code like that:
