@@ -126,7 +126,7 @@ namespace Bnp.Pricer.Configuration
 		/// <returns>returns true for a success, otherwise false.</returns>
 		public bool Any()
 		{
-			return _collection.Count >= 0;
+			return _collection.Count > 0;
 		}
 
 		/// <summary>
