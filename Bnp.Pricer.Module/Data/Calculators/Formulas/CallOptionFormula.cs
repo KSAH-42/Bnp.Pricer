@@ -72,8 +72,8 @@ namespace Bnp.Pricer.Data.Calculators.Formulas
 		public override void Calculate()
 		{
 			SetResult( StockPrice  *  MathFunctions.CumulativeDistribution( D1 )
- 				     - StrikePrice * (MathFunctions.Exponantial( - RiskInterest * Time ) ) * MathFunctions.CumulativeDistribution( D2 )
-					 );
+ 				 - StrikePrice * (MathFunctions.Exponantial( - RiskInterest * Time ) ) * MathFunctions.CumulativeDistribution( D2 )
+		                 );
 		}
 	}
 }
