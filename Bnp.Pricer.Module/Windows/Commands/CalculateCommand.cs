@@ -37,7 +37,7 @@ namespace Bnp.Pricer.Windows.Commands
 			}
 
 			_model      = model;
-			_calculator	= new BlackScholesCalculator();
+			_calculator = new BlackScholesCalculator();
 		}
 
 
