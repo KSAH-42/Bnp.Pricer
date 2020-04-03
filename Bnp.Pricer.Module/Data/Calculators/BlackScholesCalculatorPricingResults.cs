@@ -39,7 +39,7 @@ namespace Bnp.Pricer.Data.Calculators
 		{
 			_d1         = d1;
 			_d2         = d2;
-			_callOption	= callOption;
+			_callOption = callOption;
 			_putOption  = putOption;
 		}
 
