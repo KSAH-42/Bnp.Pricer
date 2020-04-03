@@ -29,7 +29,7 @@ For more details, look on the following namespaces :
 
 # Additional informations
 
-In this section, you will the tools and the technologies used during the development for this application :
+In this section, you will find the tools and the technologies used during the development for this application :
 
 * Visual Studio Express edition (2017)
 * C#
