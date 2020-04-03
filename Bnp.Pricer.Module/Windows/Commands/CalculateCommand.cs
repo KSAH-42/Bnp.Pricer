@@ -14,12 +14,12 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorModel			_model		= null;
+		private readonly CalculatorModel         _model        = null;
 
 		/// <summary>
 		/// The calculator 
 		/// </summary>
-		private readonly BlackScholesCalculator		_calculator	= null;
+		private readonly BlackScholesCalculator  _calculator   = null;
 
 
 
@@ -36,7 +36,7 @@ namespace Bnp.Pricer.Windows.Commands
 				throw new ArgumentNullException( nameof( model ) );
 			}
 
-			_model		= model;
+			_model      = model;
 			_calculator	= new BlackScholesCalculator();
 		}
 
@@ -71,10 +71,10 @@ namespace Bnp.Pricer.Windows.Commands
 						_model.Time 
 						) );
 				
-				_model.D1			= result.D1			.ToRound( _model.Precision );
-				_model.D2			= result.D2			.ToRound( _model.Precision );
-				_model.CallOption	= result.CallOption	.ToRound( _model.Precision );
-				_model.PutOption	= result.PutOption	.ToRound( _model.Precision );
+				_model.D1         = result.D1          .ToRound( _model.Precision );
+				_model.D2         = result.D2          .ToRound( _model.Precision );
+				_model.CallOption = result.CallOption  .ToRound( _model.Precision );
+				_model.PutOption  = result.PutOption   .ToRound( _model.Precision );
 			}
 			catch ( Exception ex )
 			{
