@@ -85,7 +85,7 @@ namespace Bnp.Pricer.Configuration
 				throw new ConfigurationException( "Invalid configuration file" );
 			}
 
-			if ( string.IsNullOrWhiteSpace( _fileName.Trim() ) )
+			if ( string.IsNullOrEmpty( _fileName.Trim() ) )
 			{
 				throw new ConfigurationException( "Invalid configuration file" );
 			}
