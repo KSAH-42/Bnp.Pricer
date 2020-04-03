@@ -10,24 +10,24 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// The settings list
 		/// </summary>
-		private static readonly ConfigurationSettingList			s_settings		= null;
+		private static readonly ConfigurationSettingList                    s_settings      = null;
 
 		
 		
 		/// <summary>
 		/// Event raised the configuration has been loaded
 		/// </summary>
-		public static event EventHandler<ConfigurationLoadedEventArgs>		Loaded			= delegate { };
+		public static event EventHandler<ConfigurationLoadedEventArgs>      Loaded          = delegate { };
 
 		/// <summary>
 		/// Event raised the configuration has been saved
 		/// </summary>
-		public static event EventHandler<ConfigurationSavedEventArgs>		Saved			= delegate { };
+		public static event EventHandler<ConfigurationSavedEventArgs>       Saved           = delegate { };
 
 		/// <summary>
 		/// Event raised when a load / save operation failed
 		/// </summary>
-		public static event EventHandler<ConfigurationExceptionEventArgs>	Exception		= delegate { };
+		public static event EventHandler<ConfigurationExceptionEventArgs>   Exception       = delegate { };
 
 
 

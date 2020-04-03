@@ -131,8 +131,8 @@ namespace Bnp.Pricer.Configuration
 			var xmlDocument = new XmlDocument();
 
 			var xmlSettings = xmlDocument.AppendNode( "pricer")
-				                     .AppendNode( "configuration")
-				                     .AppendNode( "settings");
+			                             .AppendNode( "configuration")
+			                             .AppendNode( "settings");
 
 			foreach ( var setting in Settings )
 			{
