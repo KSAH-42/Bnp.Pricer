@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Bnp.Pricer.Configuration
 {
 	/// <summary>
-	/// Represent a configuration setting factory
+	/// Represent a configuration setting builder
 	/// </summary>
 	public sealed class ConfigurationBuilder
 	{
