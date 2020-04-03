@@ -12,8 +12,7 @@ namespace Bnp.Pricer.Configuration
 	/// </remarks>
 	/// <example> This is an output template
 	///		<code>
-	///			<![CDATA[
-	///	
+	///			
 	///			<pricer>
 	///				<configuration>
 	///					<settings>
@@ -24,7 +23,6 @@ namespace Bnp.Pricer.Configuration
 	///				</configuration>
 	///			</pricer>
 	/// 
-	///			]]>
 	///		</code>
 	/// </example>
 	public sealed class ConfigurationProvider
