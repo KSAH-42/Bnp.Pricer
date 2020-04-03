@@ -10,7 +10,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// The settings list
 		/// </summary>
-		private static readonly ConfigurationSettingList					s_settings		= null;
+		private static readonly ConfigurationSettingList			s_settings		= null;
 
 		
 		
