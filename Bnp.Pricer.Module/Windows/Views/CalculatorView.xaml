@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:System="clr-namespace:System;assembly=mscorlib"
-             xmlns:local="clr-namespace:Bnp.Pricer.Windows.Views"
              xmlns:converters="clr-namespace:Bnp.Pricer.Windows.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
@@ -12,7 +10,7 @@
              >
     <UserControl.Resources>
         <ResourceDictionary>
-            <converters:RangePercentageConverter x:Key="RangePercentageConverter"/>
+            <converters:DecimalStringConverter x:Key="DecimalStringConverter"/>
         </ResourceDictionary>
 
     </UserControl.Resources>
@@ -64,8 +62,7 @@
                  HorizontalAlignment="Left"
                  Margin="10,56,0,0"
                  Width="100"
-                 Text="{Binding Path=Model.StrikePrice,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                 
+                 Text="{Binding Path=Model.StrikePrice,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -73,7 +70,7 @@
                  HorizontalAlignment="Left"
                  Margin="10,96,0,0"
                  Width="100"
-                 Text="{Binding Path=Model.StockPrice,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.StockPrice,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -81,7 +78,7 @@
                  HorizontalAlignment="Left"
                  Margin="10,136,0,0"
                  Width="100"
-                 Text="{Binding Path=Model.Time,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.Time,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -89,7 +86,7 @@
                  HorizontalAlignment="Left"
                  Margin="10,176,0,0"
                  Width="100"
-                 Text="{Binding Path=Model.StandardDeviation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.StandardDeviation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -97,7 +94,7 @@
                  HorizontalAlignment="Left"
                  Margin="10,216,0,0"
                  Width="100"
-                 Text="{Binding Path=Model.RiskInterest,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.RiskInterest,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
 
@@ -133,7 +130,7 @@
                  Margin="10,331,0,0"
                  Width="100"
                  IsReadOnly="True"
-                 Text="{Binding Path=Model.D1,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.D1,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -142,7 +139,7 @@
                  Margin="120,331,0,0"
                  Width="100"
                  IsReadOnly="True"
-                 Text="{Binding Path=Model.D2,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.D2,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <Label Grid.Column="1"  
@@ -169,7 +166,7 @@
                  Margin="10,391,0,0"
                  Width="100"
                  IsReadOnly="True"
-                 Text="{Binding Path=Model.CallOption,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.CallOption,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <TextBox Grid.Column="1"  
@@ -178,7 +175,7 @@
                  Margin="120,391,0,0"
                  Width="100"
                  IsReadOnly="True"
-                 Text="{Binding Path=Model.PutOption,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 Text="{Binding Path=Model.PutOption,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource DecimalStringConverter}}"
                  />
 
         <Button Grid.Column="0"
