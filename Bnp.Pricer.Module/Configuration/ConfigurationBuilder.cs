@@ -11,7 +11,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// The settings list
 		/// </summary>
-		private readonly ConfigurationSettingList		_settings	= null;
+		private readonly ConfigurationSettingList	_settings	= null;
 
 		/// <summary>
 		/// The collection used to build
@@ -21,7 +21,7 @@ namespace Bnp.Pricer.Configuration
 		/// <summary>
 		/// Variable used to perform to remove all elements before the build operation
 		/// </summary>
-		private bool									_autoClear	= false;
+		private bool					_autoClear	= false;
 
 
 
