@@ -208,11 +208,11 @@ namespace Bnp.Pricer.Windows.Models
 		/// </summary>
 		public void ClearParameters()
 		{
-			StockPrice		= 0;
-			StrikePrice		= 0;
-			Time			= 0;
-			StandardDeviation	= 0;
-			RiskInterest		= 0;
+			StockPrice          = 0;
+			StrikePrice         = 0;
+			Time                = 0;
+			StandardDeviation   = 0;
+			RiskInterest        = 0;
 		}
 
 		/// <summary>
@@ -220,10 +220,10 @@ namespace Bnp.Pricer.Windows.Models
 		/// </summary>
 		public void ClearResults()
 		{
-			D1		= 0;
-			D2		= 0;
-			CallOption	= 0;
-			PutOption	= 0;
+			D1          = 0;
+			D2          = 0;
+			CallOption  = 0;
+			PutOption   = 0;
 		}
 	}
 }
