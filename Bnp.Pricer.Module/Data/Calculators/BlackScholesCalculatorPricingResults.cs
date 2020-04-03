@@ -10,22 +10,22 @@ namespace Bnp.Pricer.Data.Calculators
 		/// <summary>
 		/// D1 backing field
 		/// </summary>
-		private readonly decimal _d1			= 0;
+		private readonly decimal          _d1          = 0;
 
 		/// <summary>
 		/// D2 backing field
 		/// </summary>
-		private readonly decimal _d2			= 0;
+		private readonly decimal          _d2          = 0;
 
 		/// <summary>
 		/// Call option backing field
 		/// </summary>
-		private readonly decimal _callOption	= 0;
+		private readonly decimal          _callOption  = 0;
 
 		/// <summary>
 		/// Put option backing field
 		/// </summary>
-		private readonly decimal _putOption		= 0;
+		private readonly decimal          _putOption   = 0;
 
 		
 		/// <summary>
@@ -37,10 +37,10 @@ namespace Bnp.Pricer.Data.Calculators
 		/// <param name="putOption">the put option</param>
 		public BlackScholesCalculatorPricingResults( decimal d1 , decimal d2 , decimal callOption , decimal putOption )
 		{
-			_d1			= d1;
-			_d2			= d2;
+			_d1         = d1;
+			_d2         = d2;
 			_callOption	= callOption;
-			_putOption	= putOption;
+			_putOption  = putOption;
 		}
 
 
