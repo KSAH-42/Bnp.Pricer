@@ -341,9 +341,7 @@ namespace Bnp.Pricer.Configuration
 				throw new ArgumentNullException( nameof( predicate) );
 			}
 
-			return _collection.Values.Where ( predicate )
-									 .Select( element => element.Name )
-									 .ToList();
+			return _collection.Values.Where( predicate ).Select( element => element.Name ).ToList();
 		}
 
 		/// <summary>
