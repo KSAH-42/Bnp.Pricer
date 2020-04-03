@@ -10,27 +10,27 @@ namespace Bnp.Pricer.Data.Calculators
 		/// <summary>
 		/// Stock price backing field
 		/// </summary>
-		private readonly decimal _stockPrice			= 0;
+		private readonly decimal _stockPrice           = 0;
 
 		/// <summary>
 		/// Strike price backing field
 		/// </summary>
-		private readonly decimal _strikePrice			= 0;
+		private readonly decimal _strikePrice          = 0;
 
 		/// <summary>
 		/// Stddev price backing field
 		/// </summary>
-		private readonly decimal _standardDeviation		= 0;
+		private readonly decimal _standardDeviation    = 0;
 
 		/// <summary>
 		/// Risk interest backing field
 		/// </summary>
-		private readonly decimal _riskInterest			= 0;
+		private readonly decimal _riskInterest         = 0;
 
 		/// <summary>
 		/// Time backing field
 		/// </summary>
-		private readonly decimal _time					= 0;
+		private readonly decimal _time                 = 0;
 
 
 		/// <summary>
@@ -43,11 +43,11 @@ namespace Bnp.Pricer.Data.Calculators
 		/// <param name="time">the time</param>
 		public BlackScholesCalculatorPricingData( decimal stockPrice , decimal strikePrice , decimal standardDeviation , decimal riskInterest , decimal time  )
 		{
-			_stockPrice			= stockPrice;
-			_strikePrice		= strikePrice;
-			_standardDeviation	= standardDeviation;
-			_riskInterest		= riskInterest;
-			_time				= time;
+			_stockPrice         = stockPrice;
+			_strikePrice        = strikePrice;
+			_standardDeviation  = standardDeviation;
+			_riskInterest       = riskInterest;
+			_time               = time;
 		}
 
 		
@@ -76,8 +76,8 @@ namespace Bnp.Pricer.Data.Calculators
 		public static BlackScholesCalculatorPricingData NewPricingData( decimal stockPrice , decimal strikePrice , decimal standardDeviation , decimal riskInterest , decimal time , bool useTimeAsDays )
 		{
 			decimal realTime = ( useTimeAsDays ) 
-							 ? time / 365M 
-							 : time;
+					   ? time / 365M 
+					   : time;
 			
 			return new BlackScholesCalculatorPricingData( stockPrice , strikePrice , standardDeviation , riskInterest , realTime );
 		}
