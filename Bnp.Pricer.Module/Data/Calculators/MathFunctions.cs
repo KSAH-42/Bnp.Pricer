@@ -9,8 +9,8 @@ namespace Bnp.Pricer.Data.Calculators
 	///		<example> This class is used to avoid code like that:
 	///		<code>
 	///                     decimal value  = 2M;
-	///                     double result1 = Math.Log( Convert.ToDouble( 2M ) );
-	///			double result2 = Math.Log( x ) * Algos.CalcDistrib( x ) + Heplers.CalcSomething(x) ;
+	///                     double result1 = Math.Log( Convert.ToDouble( value ) );
+	///			double result2 = Math.Log( x ) * Algos.CalcDistrib( x ) + Heplers.CalcSomething( Convert.ToFloat( value ) ) ;
 	///		</code>
 	///		<para>The prefered approach is: </para>
 	///		<code>
