@@ -58,9 +58,9 @@ namespace Bnp.Pricer.Data.Calculators.Formulas
 		/// <remarks>
 		///		<para>
 		///			
-		///                 ln( StockPrice / StrikePrice ) + ( RiskInterest + (Deviation^2) / 2 ) * Maturity
-		///		    d1 = ______________________________________________________________________________________
-		///		                       Deviation * Square( Maturity );
+		///                  ln( StockPrice / StrikePrice ) + ( RiskInterest + (Deviation^2) / 2 ) * Maturity
+		///           d1 = ______________________________________________________________________________________
+		///                                Deviation * Square( Maturity );
 		///		</para>
 		/// </remarks>
 		public override void Calculate()
