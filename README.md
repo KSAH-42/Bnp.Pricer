@@ -4,7 +4,7 @@ In this repository, you will find an implementation of a trading options Black S
 
 # Project structure
 
-So here, you will have the following projects :
+So here, we have the following projects :
 
 | Project name                 | Assembly type               |
 | ---------------------------- | --------------------------- |
