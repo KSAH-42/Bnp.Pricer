@@ -19,7 +19,7 @@ The majority of the code are located under the following assembly :
 
 # About the calculator
 
-The calculator implementation is located in the following namespaces :
+The calculator implementation is located under the following namespaces :
 
 * Bnp.Pricer.Data
 * Bnp.Pricer.Data.Calculators
