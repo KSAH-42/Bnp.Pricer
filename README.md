@@ -13,7 +13,7 @@ So here, we have the following projects :
 | Bnp.Pricer.Module.Tests      | .dll                        |
 
 
-The majority of the code are located under the following assembly :
+The majority of the code are located in the following assembly :
 
 > Bnp.Pricer.Module.dll 
 
