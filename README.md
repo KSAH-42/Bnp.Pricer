@@ -1,6 +1,6 @@
 # Black Scholes Calculator
 
-In this repository, you will find an implementation of a trading options Black Scholes calculator using C# and WPF. The purpose of this project is also to explore a different way of using the MVVM pattern. This project doesn't really used MVVM, but it is very similar but it is not really MVVM. 
+In this repository, you will find an implementation of a trading options Black Scholes calculator using C# and WPF. The purpose of this project is also to explore a different way of using the MVVM pattern. This project doesn't really used MVVM, but it is very similar. During my professional experience, I was faced to some scalabilty issues. Not issues related to the performance, but scalabilty when the amount of code grows, and we need to add more and more features. 
 
 # Project structure
 
