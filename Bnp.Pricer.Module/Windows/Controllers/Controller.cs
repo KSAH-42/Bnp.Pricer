@@ -5,7 +5,7 @@ namespace Bnp.Pricer.Windows.Controllers
 	using Bnp.Pricer.Windows.Models;
 
 	/// <summary>
-	/// Represent the base controller class. This class is the base viewmodel, it'has been renamed to avoid naming confusion.
+	/// Represent the base controller class. This class doesn't really services provided by a traditional view model class. This class has been introduce to explore a different implementation of a viewmodel
 	/// </summary>
 	public abstract class Controller
 	{
