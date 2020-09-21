@@ -1,7 +1,7 @@
 # Black Scholes Calculator
 
 This application represents an example of an implementation for a trading options Black Scholes calculator using C# and WPF. 
-For more details, take a look too see how looks like the [formula](https://en.wikipedia.org/wiki/Black–Scholes_model#Black–Scholes_formula)
+For more details, take a look too see how the [formula](https://en.wikipedia.org/wiki/Black–Scholes_model#Black–Scholes_formula) looks like
 
 
 
