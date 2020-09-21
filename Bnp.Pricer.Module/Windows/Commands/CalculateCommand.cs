@@ -14,7 +14,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorViewModel          _model        = null;
+		private readonly CalculatorViewModel      _model        = null;
 
 		/// <summary>
 		/// The calculator 
@@ -31,12 +31,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <exception cref="ArgumentNullException"/>
 		public CalculateCommand( CalculatorViewModel model )
 		{
-			if ( null == model )
-			{
-				throw new ArgumentNullException( nameof( model ) );
-			}
-
-			_model      = model;
+			_model      = model ?? throw new ArgumentNullException( nameof( model ) ); ;
 			_calculator = new BlackScholesCalculator();
 		}
 

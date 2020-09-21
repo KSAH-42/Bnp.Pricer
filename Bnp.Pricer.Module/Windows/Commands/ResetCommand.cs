@@ -22,12 +22,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <exception cref="ArgumentNullException"/>
 		public ResetCommand( CalculatorViewModel model )
 		{
-			if ( null == model )
-			{
-				throw new ArgumentNullException( nameof( model ) );
-			}
-
-			_model = model;
+			_model = model ?? throw new ArgumentNullException( nameof( model ) ); ;
 		}
 
 
