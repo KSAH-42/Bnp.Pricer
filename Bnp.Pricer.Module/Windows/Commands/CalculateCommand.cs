@@ -4,7 +4,7 @@ namespace Bnp.Pricer.Windows.Commands
 {
 	using Bnp.Pricer.Data;
 	using Bnp.Pricer.Data.Calculators;
-	using Bnp.Pricer.Windows.Models;
+	using Bnp.Pricer.Windows.ViewsModels;
 	
 	/// <summary>
 	/// Represent the calculate command
@@ -14,7 +14,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorModel          _model        = null;
+		private readonly CalculatorViewModel          _model        = null;
 
 		/// <summary>
 		/// The calculator 
@@ -29,7 +29,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// </summary>
 		/// <param name="model">the model</param>
 		/// <exception cref="ArgumentNullException"/>
-		public CalculateCommand( CalculatorModel model )
+		public CalculateCommand( CalculatorViewModel model )
 		{
 			if ( null == model )
 			{

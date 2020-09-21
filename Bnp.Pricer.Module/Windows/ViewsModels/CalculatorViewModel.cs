@@ -1,61 +1,75 @@
 ﻿using System;
+using System.Windows.Input;
 
-namespace Bnp.Pricer.Windows.Models
+namespace Bnp.Pricer.Windows.ViewsModels
 {
+	using Bnp.Pricer.Windows.Commands;
+
 	/// <summary>
 	/// Represent the model
 	/// </summary>
-	public sealed class CalculatorModel : Model
+	public sealed class CalculatorViewModel : BaseViewModel
 	{
+		/// <summary>
+		/// The calculate command
+		/// </summary>
+		private readonly ICommand           _calculateCommand   = null;
+
+		/// <summary>
+		/// The reset command
+		/// </summary>
+		private readonly ICommand           _resetCommand       = null;
+
 		/// <summary>
 		/// The pricision
 		/// </summary>
-		private int             _precision          = 4;
+		private int                         _precision          = 4;
 
 		/// <summary>
 		/// The stock price backing field
 		/// </summary>
-		private decimal         _stockPrice         = 0;
+		private decimal                     _stockPrice         = 0;
 
 		/// <summary>
 		/// The strike price backing field
 		/// </summary>
-		private decimal         _strikePrice        = 0;
+		private decimal                     _strikePrice        = 0;
 
 		/// <summary>
 		/// The time backing field
 		/// </summary>
-		private decimal         _time               = 0;
+		private decimal                     _time               = 0;
 
 		/// <summary>
 		/// The standard deviation backing field
 		/// </summary>
-		private decimal         _standardDeviation  = 0;
+		private decimal                     _standardDeviation  = 0;
 
 		/// <summary>
 		/// The risk interest backing field
 		/// </summary>
-		private decimal         _riskInterest       = 0;
+		private decimal                     _riskInterest       = 0;
 
 		/// <summary>
 		/// D1 backing field
 		/// </summary>
-		private decimal         _d1                 = 0;
+		private decimal                     _d1                 = 0;
 
 		/// <summary>
 		/// D2 backing field
 		/// </summary>
-		private decimal         _d2                 = 0;
+		private decimal                     _d2                 = 0;
 
 		/// <summary>
 		/// Call option backing field
 		/// </summary>
-		private decimal         _callOption         = 0;
+		private decimal                     _callOption         = 0;
 
 		/// <summary>
 		/// Put option backing field
 		/// </summary>
-		private decimal         _putOption          = 0;
+		private decimal                     _putOption          = 0;
+
 
 		
 		
@@ -63,13 +77,31 @@ namespace Bnp.Pricer.Windows.Models
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		public CalculatorModel()
+		public CalculatorViewModel()
 		{
+			_calculateCommand = new CalculateCommand( this );
+			_resetCommand     = new ResetCommand( this );
 		}
 
 
 
-		
+
+		/// <summary>
+		/// Gets the calculate command
+		/// </summary>
+		public ICommand CalculateCommand
+		{
+			get => _calculateCommand;
+		}
+
+		/// <summary>
+		/// Gets the reset command
+		/// </summary>
+		public ICommand ResetCommand
+		{
+			get => _resetCommand;
+		}
+
 		/// <summary>
 		/// Gets / Sets the precision
 		/// </summary>

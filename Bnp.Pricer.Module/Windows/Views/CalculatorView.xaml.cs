@@ -15,8 +15,6 @@ using System.Windows.Shapes;
 
 namespace Bnp.Pricer.Windows.Views
 {
-	using Bnp.Pricer.Windows.Controllers;
-
 	/// <summary>
 	/// Logique d'interaction pour CalculatorView.xaml
 	/// </summary>
@@ -28,8 +26,6 @@ namespace Bnp.Pricer.Windows.Views
 		public CalculatorView()
 		{
 			InitializeComponent();
-
-			DataContext = Controller.Factory.NewController<CalculatorController>();
 		}
 	}
 }

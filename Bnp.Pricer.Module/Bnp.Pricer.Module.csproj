@@ -72,19 +72,17 @@
     <Compile Include="Data\Calculators\BlackScholesCalculatorPricingData.cs" />
     <Compile Include="Data\TypeExtensionHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\Commands\RelayCommand.cs" />
     <Compile Include="Windows\Converters\DecimalStringConverter.cs" />
+    <Compile Include="Windows\ViewsModels\BaseViewModel.cs" />
+    <Compile Include="Windows\ViewsModels\CalculatorViewModel.cs" />
     <Compile Include="Windows\UIEnvironment.cs" />
     <Compile Include="Windows\ValueAdapter.cs" />
     <Compile Include="Windows\AlertBox.cs" />
     <Compile Include="Windows\Commands\CalculateCommand.cs" />
     <Compile Include="Windows\Commands\ResetCommand.cs" />
     <Compile Include="Windows\Commands\Command.cs" />
-    <Compile Include="Windows\Controllers\CalculatorController.cs" />
-    <Compile Include="Windows\Controllers\ControllerFactory.cs" />
-    <Compile Include="Windows\Controllers\Controller.cs" />
     <Compile Include="Windows\Converters\RangePercentageConverter.cs" />
-    <Compile Include="Windows\Models\CalculatorModel.cs" />
-    <Compile Include="Windows\Models\Model.cs" />
     <Compile Include="Windows\Views\CalculatorView.xaml.cs">
       <DependentUpon>CalculatorView.xaml</DependentUpon>
     </Compile>

@@ -2,7 +2,7 @@
 
 namespace Bnp.Pricer.Windows.Commands
 {
-	using Bnp.Pricer.Windows.Models;
+	using Bnp.Pricer.Windows.ViewsModels;
 
 	/// <summary>
 	/// Represent the reset calculator command
@@ -12,7 +12,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorModel _model	= null;
+		private readonly CalculatorViewModel _model	= null;
 
 
 		/// <summary>
@@ -20,7 +20,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// </summary>
 		/// <param name="model">the model</param>
 		/// <exception cref="ArgumentNullException"/>
-		public ResetCommand( CalculatorModel model )
+		public ResetCommand( CalculatorViewModel model )
 		{
 			if ( null == model )
 			{

@@ -2,12 +2,12 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Bnp.Pricer.Windows.Models
+namespace Bnp.Pricer.Windows.ViewsModels
 {
 	/// <summary>
 	/// Represent the model
 	/// </summary>
-	public abstract class Model : INotifyPropertyChanged
+	public abstract class BaseViewModel : INotifyPropertyChanged
 	{
 		/// <summary>
 		/// Raise when a property has been changed
