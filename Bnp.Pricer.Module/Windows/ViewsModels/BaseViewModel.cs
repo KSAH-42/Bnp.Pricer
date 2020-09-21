@@ -100,18 +100,11 @@ namespace Bnp.Pricer.Windows.ViewsModels
 				return;
 			}
 
-			try
-			{
-				var handler = PropertyChanged;
+			var handler = PropertyChanged;
 
-				if ( null != handler )
-				{
-					handler( this , e );
-				}
-			}
-			catch ( Exception ex )
+			if ( null != handler )
 			{
-				System.Diagnostics.Debug.WriteLine( ex );
+				handler( this , e );
 			}
 		}
 
