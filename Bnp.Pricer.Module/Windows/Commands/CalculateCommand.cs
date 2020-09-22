@@ -14,7 +14,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorViewModel      _model        = null;
+		private readonly CalculatorViewModel      _viewModel    = null;
 
 		/// <summary>
 		/// The calculator 
@@ -27,11 +27,11 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		/// <param name="model">the model</param>
+		/// <param name="viewModel">the view model</param>
 		/// <exception cref="ArgumentNullException"/>
-		public CalculateCommand( CalculatorViewModel model )
+		public CalculateCommand( CalculatorViewModel viewModel )
 		{
-			_model      = model ?? throw new ArgumentNullException( nameof( model ) ); ;
+			_viewModel  = viewModel ?? throw new ArgumentNullException( nameof( viewModel ) ); ;
 			_calculator = new BlackScholesCalculator();
 		}
 
@@ -45,7 +45,7 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <returns>returns true for a success, otherwise false.</returns>
 		public override bool CanExecute( object parameter )
 		{
-			return _model.IsValid();
+			return _viewModel.IsValid();
 		}
 
 		/// <summary>
@@ -54,22 +54,22 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <param name="parameter">the parameter</param>
 		public override void Execute( object parameter )
 		{
-			_model.ClearResults();
+			_viewModel.ClearResults();
 
 			try
 			{
 				var result = _calculator.Calculate( BlackScholesCalculatorPricingData.NewPricingData(
-						_model.StockPrice , 
-						_model.StrikePrice , 
-						_model.StandardDeviation / 100M , 
-						_model.RiskInterest / 100M , 
-						_model.Time 
+						_viewModel.StockPrice , 
+						_viewModel.StrikePrice , 
+						_viewModel.StandardDeviation / 100M , 
+						_viewModel.RiskInterest / 100M , 
+						_viewModel.Time 
 						) );
 				
-				_model.D1         = result.D1          .ToRound( _model.Precision );
-				_model.D2         = result.D2          .ToRound( _model.Precision );
-				_model.CallOption = result.CallOption  .ToRound( _model.Precision );
-				_model.PutOption  = result.PutOption   .ToRound( _model.Precision );
+				_viewModel.D1         = result.D1          .ToRound( _viewModel.Precision );
+				_viewModel.D2         = result.D2          .ToRound( _viewModel.Precision );
+				_viewModel.CallOption = result.CallOption  .ToRound( _viewModel.Precision );
+				_viewModel.PutOption  = result.PutOption   .ToRound( _viewModel.Precision );
 			}
 			catch ( Exception ex )
 			{

@@ -12,17 +12,17 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <summary>
 		/// The model
 		/// </summary>
-		private readonly CalculatorViewModel _model	= null;
+		private readonly CalculatorViewModel _viewModel	= null;
 
 
 		/// <summary>
 		/// Constructor
 		/// </summary>
-		/// <param name="model">the model</param>
+		/// <param name="viewModel">the view model</param>
 		/// <exception cref="ArgumentNullException"/>
-		public ResetCommand( CalculatorViewModel model )
+		public ResetCommand( CalculatorViewModel viewModel )
 		{
-			_model = model ?? throw new ArgumentNullException( nameof( model ) ); ;
+			_viewModel = viewModel ?? throw new ArgumentNullException( nameof( viewModel ) ); ;
 		}
 
 
@@ -42,8 +42,8 @@ namespace Bnp.Pricer.Windows.Commands
 		/// <param name="parameter">the parameter</param>
 		public override void Execute( object parameter )
 		{
-			_model.ClearParameters();
-			_model.ClearResults();
+			_viewModel.ClearParameters();
+			_viewModel.ClearResults();
 		}
 	}
 }
