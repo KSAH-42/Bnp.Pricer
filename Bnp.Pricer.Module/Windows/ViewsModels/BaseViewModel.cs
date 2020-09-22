@@ -49,39 +49,36 @@ namespace Bnp.Pricer.Windows.ViewsModels
 		/// <param name="member">the member</param>
 		/// <param name="value">the value</param>
 		/// <param name="propertyName">the property</param>
-		/// <returns>returns the value</returns>
-		protected bool SetField<TValue>( ref TValue member , TValue value , [CallerMemberName] string propertyName = null )
+		protected void SetField<TValue>( ref TValue member , TValue value , [CallerMemberName] string propertyName = null )
 		{
 			if ( string.IsNullOrWhiteSpace( propertyName ) )
 			{
-				return false;
+				return;
 			}
 
 			if ( member is ValueType )
 			{
 				if ( member.Equals( value ) )
 				{
-					return false;
+					return;
 				}
 			}
 			else
 			{
 				if ( object.ReferenceEquals( member , value ) )
 				{
-					return false;
+					return;
 				}
 
 				if ( null != member && member.Equals( value ) )
 				{
-					return false;
+					return;
 				}
 			}
 
 			member = value;
 
 			OnPropertyChanged( new PropertyChangedEventArgs( propertyName ) );
-
-			return true;
 		}
 
 
