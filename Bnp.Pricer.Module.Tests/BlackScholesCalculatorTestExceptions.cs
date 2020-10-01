@@ -17,7 +17,7 @@ namespace Bnp.Pricer.Tests
 		}
 
 		[TestMethod]
-		public void AssertNullArgumentException()
+		public void Should_ThrowException_When_NullArgs()
 		{
 			Assert.ThrowsException<ArgumentNullException>( () => _calculator.Calculate( null ) );
 		}

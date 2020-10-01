@@ -21,25 +21,25 @@ namespace Bnp.Pricer.Tests
 		}
 
 		[TestMethod]
-		public void AssertD1()
+		public void Should_D1_Exepcted_Equal()
 		{
 			Assert.AreEqual( 1.6588M , _result.D1.ToRound( 4 ) );
 		}
 
 		[TestMethod]
-		public void AssertD2()
+		public void Should_D2_Exepcted_Equal()
 		{
 			Assert.AreEqual( 1.2734M , _result.D2.ToRound( 4 ) );
 		}
 
 		[TestMethod]
-		public void AssertCallOption()
+		public void Should_CallOption_Exepcted_Equal()
 		{
 			Assert.AreEqual( 24.6812M , _result.CallOption.ToRound( 4 ) );
 		}
 
 		[TestMethod]
-		public void AssertPutOption()
+		public void Should_PutOption_Exepcted_Equal()
 		{
 			Assert.AreEqual( 0.508M , _result.PutOption.ToRound( 4 ) );
 		}
